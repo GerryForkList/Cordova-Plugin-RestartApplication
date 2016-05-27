@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.rodrigo.plugins.restartAplication"
+        version="1.0">
+
+    <name>Android Restart Aplication</name>
+
+    <description>
+        Allows aplication restart itself
+    </description>
+
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="RestartAplication">
+                <param name="android-package" value="com.rodrigo.plugins.restartAplication.RestartAplication" />
+            </feature>
+        </config-file>
+
+        <js-module src="www/RestartAplication.js" name="RestartAplication">
+            <clobbers target="cordova.plugins.RestartAplication" />
+        </js-module>
+
+        <source-file src="src/android/RestartAplication.java" target-dir="src/com/rodrigo/plugins/restartAplication" />
+
+    </platform>
+</plugin>
