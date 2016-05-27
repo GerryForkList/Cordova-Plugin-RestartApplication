@@ -1,9 +1,9 @@
 /*
- * Phonegap VolumeMax Plugin for Android
+ * Cordova restart aplication
  * Cordova 2.2.0
  * Email: rodrigo[dot]gontijo[at]hotmail[dot]com
  * Author: Rodrigo Augusto Gontijo
- * Date: 05/23/2016
+ * Date: 05/27/2016
  */
 
 package com.rodrigo.plugins.restartAplication;
