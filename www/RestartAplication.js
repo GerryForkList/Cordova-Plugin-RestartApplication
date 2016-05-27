@@ -1,5 +1,5 @@
 /*
- * Android Data Roaming Setting
+ * Android restart aplication
  * Cordova 2.2.0
  * Email: rodrigo[dot]gontijo[at]hotmail[dot]com
  * Author: Rodrigo Augusto Gontijo
