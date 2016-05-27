@@ -26,16 +26,19 @@ public class RestartAplication extends CordovaPlugin {
     private static final String TAG = "RestartAplication";
 
     private Context context;
+    private Context basecontext;
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         boolean actionState = true;
         context = cordova.getActivity().getApplicationContext();
+        basecontext = cordova.getActivity().getBaseContext();
+
         if (SET.equals(action)) {
             try {
                 //Intent to restart aplication
-                Intent intent = context.getPackageManager()
-                        .getLaunchIntentForPackage( context.getPackageName() );
+                Intent intent = basecontext.getPackageManager()
+                        .getLaunchIntentForPackage( basecontext.getPackageName() );
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 cordova.getActivity().finish();
                 this.cordova.startActivityForResult(this,intent,0);
