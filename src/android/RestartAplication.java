@@ -37,7 +37,7 @@ public class RestartAplication extends CordovaPlugin {
                 Intent intent = context.getPackageManager()
                         .getLaunchIntentForPackage( context.getPackageName() );
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                context.finish();
+                cordova.getActivity().finish();
                 this.cordova.startActivityForResult(this,intent,0);
                 
             } catch (Exception e) {
