@@ -6,7 +6,7 @@
  * Date: 05/27/2016
  */
 
-package com.rodrigo.plugins.restartAplication;
+package com.rodrigo.plugins.restartApplication;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
@@ -20,10 +20,10 @@ import android.provider.Settings;
 import android.content.Context;
 import android.media.*;
 
-public class RestartAplication extends CordovaPlugin {
+public class RestartApplication extends CordovaPlugin {
 
-    public static final String SET = "restartAplication";
-    private static final String TAG = "RestartAplication";
+    public static final String SET = "restartApplication";
+    private static final String TAG = "RestartApplication";
 
     private Context context;
     private Context basecontext;
@@ -36,7 +36,7 @@ public class RestartAplication extends CordovaPlugin {
 
         if (SET.equals(action)) {
             try {
-                //Intent to restart aplication
+                //Intent to restart application
                 Intent intent = basecontext.getPackageManager()
                         .getLaunchIntentForPackage( basecontext.getPackageName() );
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
