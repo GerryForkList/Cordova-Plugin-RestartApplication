@@ -8,15 +8,15 @@
 
 var exec = require('cordova/exec');
 
-var RestartAplication = {
-  restartAplication: function(successCallback, failureCallback){
+var RestartApplication = {
+  restartApplication: function(successCallback, failureCallback){
 		return exec(
 			successCallback,
 			failureCallback,
-			'RestartAplication',
-			'restartAplication',
+			'RestartApplication',
+			'restartApplication',
 			[]);
 	}
 };
 
-module.exports = RestartAplication;
+module.exports = RestartApplication;
