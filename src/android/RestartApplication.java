@@ -44,7 +44,7 @@ public class RestartApplication extends CordovaPlugin {
                 this.cordova.startActivityForResult(this,intent,0);
                 
             } catch (Exception e) {
-                LOG.d(TAG, "Error go to settings " + e);
+                LOG.d(TAG, "Error restarting apllication " + e);
                 actionState = false;
             }
         } else {
