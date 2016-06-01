@@ -40,8 +40,8 @@ public class RestartApplication extends CordovaPlugin {
                 Intent intent = basecontext.getPackageManager()
                         .getLaunchIntentForPackage( basecontext.getPackageName() );
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                this.cordova.startActivityForResult(this,intent,0);
                 cordova.getActivity().finish();
+                cordova.getActivity().startActivity(intent);
                 
             } catch (Exception e) {
                 LOG.d(TAG, "Error restarting apllication " + e);
