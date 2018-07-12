@@ -6,7 +6,7 @@ Restart your Application.  Cordova / PhoneGap plugin.
 Installation:
 -------------
 1. Install using Cordova CLI:
-    `cordova plugin add https://github.com/RodrigoGontijo/Cordova-Plugin-RestartApplication.git`
+    `cordova plugin add https://github.com/GerryForkList/Cordova-Plugin-RestartApplication.git`
 
 __Example of usage ()__
            
