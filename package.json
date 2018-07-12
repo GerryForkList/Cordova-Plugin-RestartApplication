@@ -9,10 +9,6 @@
       "android"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zidong0822/Cordova-Plugin-RestartApplication.git"
-  },
   "keywords": [
     "cordova",
     "update",
